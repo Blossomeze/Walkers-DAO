@@ -12,7 +12,7 @@ import WalletIcon from '@mui/icons-material/Wallet';
 
 function Webbody() {
   return (
-    <div className='flex items-center justify-center flex-col p-0 mt-[9%]'>
+    <div className='flex items-center justify-center flex-col p-0 mt-[9%] lg:mt-0'>
     <div className='bg-[#F9F9FB] w-full flex items-center justify-center flex-col pb-[0 !important] pt-[5%] lg:pt-[3%]' >
         <h1 className='max-w-2xl pb-2 px-8 lg:px-0 pt-[8%] text-3xl lg:text-5xl lg:pb-4'>We don't just teach. We develop greatness</h1>
         <h4 className='max-w-xl px-5 lg:px-0 text-sm lg:text-lg'>Walkers is a DAO revolutionizing Web3 education and empowerment. It is a training school of highly skilled and experienced tutors committed to nurturing and developing everyone to capture the full value of the digital world.</h4>
