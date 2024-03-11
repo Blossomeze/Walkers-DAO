@@ -35,7 +35,7 @@ function Section1() {
   };
   return (
     <div className='lg:flex mt-5 lg:justify-between items-center px-[3%]'>
-      <div className='text-center mb-4 lg:max-w-[45%] flex items-center flex-col'>
+      <div className='text-center mb-4 lg:max-w-[45%] flex items-center flex-col lg:text-left lg:items-start'>
         <h2 className='text-xl text-center lg:text-4xl lg:text-left'>The digital world is full of innovation. Learn how to take advantage of them!</h2>
         <h4 className='text-sm text-center lg:text-left lg:text-lg lg:mt-5'>Walkers DAO is a training school of highly skilled and experienced tutors committed to nurturing and developing everyone.</h4>       
         <div className='my-4 lg:mt-4 lg:text-left flex'>
@@ -43,7 +43,11 @@ function Section1() {
             <div>
                 <button className="bg-[#000] text-[#fff] flex p-3 rounded-md" onClick={handleButtonClick}>
                   <span className='pr-1'>Launch DAO</span>
-                  <RocketLaunchIcon />
+                  <img
+        src="https://icongr.am/material/foot-print.svg?size=29&color=ffffff"
+        alt="Footprint Icon"
+        style={{ transform: 'scaleX(-1)', marginTop: '-4%', marginLeft: '-2%' }} // Flip horizontally
+    />
                 </button>
             </div>  
           </div>                
