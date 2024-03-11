@@ -7,7 +7,7 @@ function Header() {
         console.log('Button clicked');
       };
   return (
-    <div className='header flex items-center justify-between px-[9%] h-20 fixed'>
+    <div className='header flex items-center justify-between px-[5%] lg:px-[9%] lg:h-20 h-16 fixed'>
         <div>
             <img className='w-[130px]' src={logo} alt='walkers logo' />
         </div>
@@ -21,9 +21,13 @@ function Header() {
         </div>
         <div>
             <div className='hidden lg:flex'>
-                <button className="bg-[#000] text-[#fff] flex p-3 rounded-md" onClick={handleButtonClick}>
-                    <span className='pr-1'>Launch DAO</span>
-                    <RocketLaunchIcon />
+                <button className="bg-[#000] text-[#fff] flex p-3 rounded-md items-center" onClick={handleButtonClick}>
+                    <span>Launch DAO</span>
+                    <img
+        src="https://icongr.am/material/foot-print.svg?size=29&color=ffffff"
+        alt="Footprint Icon"
+        style={{ transform: 'scaleX(-1)', marginTop: '-4%', marginLeft: '-2%' }} // Flip horizontally
+    />
                 </button>
             </div>  
             <div className='flex lg:hidden text-3xl'>
