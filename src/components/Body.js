@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import dashboard from '../assets/dashboard.png';
+// import dashboard from '../assets/dashboard.png';
 import jet from '../assets/jet.png';
 import chevronleft from '../assets/chevron-left.png';
 import chevronright from '../assets/chevron-right.png';
@@ -28,7 +28,7 @@ function Webbody() {
       <h4 className='bg-[#f2fad2] border-[#656B8A] border mt-[10%] px-2 rounded-xl py-[1px] text-sm'>Introducing Walkers DAO</h4>
         <h1 className='max-w-2xl pb-2 px-8 lg:px-0 text-3xl lg:text-6xl lg:pb-4 pt-5 text-center'>Little Strides,<br /> Giant Prints</h1>
         <h4 className='max-w-xl px-5 lg:px-0 text-sm lg:text-lg'>Walkers is a DAO revolutionizing Web3 education and empowerment. It is a training school of highly skilled and experienced tutors committed to nurturing and developing everyone to capture the full value of the digital world.</h4>
-        <img className='lg:px-[17%] mt-2' src ={dashboard} alt='dashboard'/>
+        {/* <img className='lg:px-[17%] mt-2' src ={dashboard} alt='dashboard'/> */}
     </div>
     <div>
       <Section1 className='mt-8' />
