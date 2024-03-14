@@ -1,57 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
-*{
+
+* {
   font-family: 'Space Grotesk', sans-serif;
-  overflow-x: hidden;
 }
-*::-webkit-scrollbar{
+*::-webkit-scrollbar {
   display: none;
 }
-h1{
+h1,
+h2 {
   font-style: normal;
   font-weight: 700;
+  line-height: 1.15;
+  color: #29363D;
+}
+h1 {
   font-size: 52px;
-  line-height: 60px;
-  text-align: center;
-  letter-spacing: -0.02em;
-  color: #29363D;
 }
-h2{
-  font-style: normal;
-  font-weight: 700;
+h2 {
   font-size: 38px;
-  line-height: 48px;
-  color: #29363D;
 }
-h4{
-  font-style: normal;
+
+h3{
+  font-size: 20px;
+  font-weight: 600;
+}
+h4 {
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
   text-align: center;
   color: #656B8A;
-}   
-h3{
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 28px;
-  color: #000;
 }
 h5{
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 32px;
-  color: #FFFFFF;
-}
-h6{ 
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #656B8A;
+  font-weight: 600;
+  font-size: 20px;
+  color: #e99e2d;
 }
 .hlinks a{
   padding: 0 15px;
+}
+.close-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+.sidebar-trigger {
+  display: none;
 }
 .header{
   -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
@@ -61,19 +56,42 @@ h6{
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  z-index: 2;
-  left: 0;
-  right: 0;
+  z-index: 1000;
 }
-.mui_icons{
-  width: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 45px;
-  background-color: #ccc;
-  border-radius: 50%;
+/* PC's and larger screens */
+@media screen and (max-width: 1024px) {
+  .header_links,
+  .header_button,
+  .moreicon {
+    display: none;
+  }
+  .sidebar-trigger,
+  .moreicon {
+    display: flex;
+  }
+  .header.slide-out {
+    transform: translateX(-80vw); /* Slide out the header */
+  }
+  .open-sidebar {
+    right: 0; /* Slide in the sidebar */
+  }
 }
-.mui_icons .css-i4bv87-MuiSvgIcon-root{
-  font-size: 26px !important;
+
+
+
+.new-open-sidebar {
+  position: fixed;
+  top: 4rem;
+  width: 100%;
+  height: calc(60vh - 4rem);
+  background-color: #000;
+  transition: height 1s ease-out; /* Add transition effect */
+  transform: translateY(-100%); /* Initially off-screen */
+  z-index: 9999; /* Ensure sidebar is on top */
 }
+
+.new-show-sidebar {
+  transform: translateY(0); /* Slide in the sidebar */
+}
+
+

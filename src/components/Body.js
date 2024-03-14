@@ -1,6 +1,8 @@
-import dashboard from '../assets/dashboard.PNG';
-import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
+import React, { useState } from 'react';
+import dashboard from '../assets/dashboard.png';
 import jet from '../assets/jet.png';
+import chevronleft from '../assets/chevron-left.png';
+import chevronright from '../assets/chevron-right.png';
 import '../App.css'
 import BoltIcon from '@mui/icons-material/Bolt';
 import PushPinIcon from '@mui/icons-material/PushPin';
@@ -9,18 +11,30 @@ import TagFacesIcon from '@mui/icons-material/TagFaces';
 import TipsAndUpdatesIcon from '@mui/icons-material/TipsAndUpdates';
 import ThumbUpOffAltIcon from '@mui/icons-material/ThumbUpOffAlt';
 import WalletIcon from '@mui/icons-material/Wallet';
+import Blog from './Blog';
+import slide1 from '../assets/aichain.png';
+import slide2 from '../assets/bolt.png';
+import slide3 from '../assets/dao.png';
+import firstleft from '../assets/Group 7 (1).png'
+import firstmiddle from '../assets/Group 10.png'
+import firstright from '../assets/Group 9.png'
+
 
 function Webbody() {
+  const slides = [slide1, slide2, slide3];
   return (
     <div className='flex items-center justify-center flex-col p-0 mt-[9%] lg:mt-0'>
-    <div className='bg-[#F9F9FB] w-full flex items-center justify-center flex-col pb-[0 !important] pt-[5%] lg:pt-[3%]' >
-        <h1 className='max-w-2xl pb-2 px-8 lg:px-0 pt-[8%] text-3xl lg:text-5xl lg:pb-4'>We don't just teach. We develop greatness</h1>
+    <div className='bg-[#F9F9FB] w-full flex items-center justify-center flex-col pb-[0 !important] pt-[5%] lg:pt-[1%]' >
+      <h4 className='bg-[#f2fad2] border-[#656B8A] border mt-[10%] px-2 rounded-xl py-[1px] text-sm'>Introducing Walkers DAO</h4>
+        <h1 className='max-w-2xl pb-2 px-8 lg:px-0 text-3xl lg:text-6xl lg:pb-4 pt-5 text-center'>Little Strides,<br /> Giant Prints</h1>
         <h4 className='max-w-xl px-5 lg:px-0 text-sm lg:text-lg'>Walkers is a DAO revolutionizing Web3 education and empowerment. It is a training school of highly skilled and experienced tutors committed to nurturing and developing everyone to capture the full value of the digital world.</h4>
-        <img className='px-[20%] lg:mx-0 mt-4' src ={dashboard} alt='dashboard'/>
+        <img className='lg:px-[17%] mt-2' src ={dashboard} alt='dashboard'/>
     </div>
-    <div className='px-[5%]'>
+    <div>
       <Section1 className='mt-8' />
       <Values className='mt-8' />
+      <Testimonials className="container mx-auto mt-8" slides={slides} />
+      <Blog />
     </div>   
   </div>
   )
@@ -34,10 +48,10 @@ function Section1() {
     console.log('Button clicked');
   };
   return (
-    <div className='lg:flex mt-5 lg:justify-between items-center px-[3%]'>
+    <div className='lg:flex mt-5 lg:justify-between items-center px-[5%]'>
       <div className='text-center mb-4 lg:max-w-[45%] flex items-center flex-col lg:text-left lg:items-start'>
-        <h2 className='text-xl text-center lg:text-4xl lg:text-left'>The digital world is full of innovation. Learn how to take advantage of them!</h2>
-        <h4 className='text-sm text-center lg:text-left lg:text-lg lg:mt-5'>Walkers DAO is a training school of highly skilled and experienced tutors committed to nurturing and developing everyone.</h4>       
+        <h2 className='text-xl text-center lg:text-4xl lg:text-left hidden lg:flex'>The digital world is full of innovation. Learn how to take advantage of them!</h2>
+        <h4 className='text-sm text-center lg:text-left lg:text-lg lg:mt-5 hidden lg:flex'>Walkers DAO is a training school of highly skilled and experienced tutors committed to nurturing and developing everyone.</h4>       
         <div className='my-4 lg:mt-4 lg:text-left flex'>
           <div className='shift'>
             <div>
@@ -81,7 +95,7 @@ function Section1() {
 
 function Values() {
   return(
-    <div className='rounded-lg bg-[#F9F9FB] pt-8 py-6 items-center text-center lg:pt-[40px]'>
+    <div className='rounded-lg bg-[#F9F9FB] pt-8 py-6 items-center text-center lg:pt-[40px] mx-[5%]'>
       <div className='items-center'>
           <h1 className='text-2xl lg:text-4xl'>Our Core Values</h1>
           <h4 className='text-sm lg:text-lg lg:py-2 px-5 text-center lg:px-[27%] lg:pb-5'>Walkers is a DAO revolutionizing Web3 education and empowerment. It is a training school of highly skilled</h4>
@@ -127,4 +141,74 @@ function Values() {
       </div>
     </div>
   )
+}
+
+
+const Testimonials = ({ slides }) => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
+  };
+
+  return (
+    <div className="bg-[#000] text-[#fff] w-[100vw] py-[5%]">
+      <div className='flex flex-col items-center justify-center'>
+        <h2 className='text-[#fff]'>What people say about Walkers DAO</h2>
+        <div className='flex'>
+        </div>
+      </div>
+      <div className="flex items-center justify-center pt-[2%]">
+        {slides.map((slide, index) => (
+          <div
+            key={index}
+            className="]transition-opacity duration-500"
+            style={{ opacity: currentSlide === index ? 1 : 0 }}
+          >
+            {/* Customize the content of each slide */}
+            {currentSlide === index && (
+              <div className="custom-slide w-full">
+                <div className='flex items-center justify-between'>
+                  {/* Content for slide 1 */}
+                  {index === 0 && (
+                    <>
+                     <img onClick={prevSlide} src={chevronleft} alt="Previous" className="cursor-pointer" />
+                      <img src={firstleft} alt="testimony" />
+                      <img src={firstmiddle} alt="testimony" />
+                      <img src={firstright} alt="testimony" />
+                      <img onClick={nextSlide} src={chevronright} alt="Next" className="cursor-pointer" />
+                    </>
+                  )}
+                  {/* Content for slide 2 */}
+                  {index === 1 && (
+                    <>
+                    <img onClick={prevSlide} src={chevronleft} alt="Previous" className="cursor-pointer" />
+                     <img src={firstleft} alt="testimony" />
+                     <img src={firstmiddle} alt="testimony" />
+                     <img src={firstright} alt="testimony" />
+                     <img onClick={nextSlide} src={chevronright} alt="Next" className="cursor-pointer" />
+                   </>
+                  )}
+                  {/* Content for slide 3 */}
+                  {index === 2 && (
+                    <>
+                    <img onClick={prevSlide} src={chevronleft} alt="Previous" className="cursor-pointer" />
+                     <img src={firstleft} alt="testimony" />
+                     <img src={firstmiddle} alt="testimony" />
+                     <img src={firstright} alt="testimony" />
+                     <img onClick={nextSlide} src={chevronright} alt="Next" className="cursor-pointer" />
+                   </>
+                  )}
+                </div>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 }
