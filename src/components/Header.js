@@ -19,10 +19,10 @@ function Header() {
           </div>
           <div className='hidden md:flex text-lg font-medium'>
             <nav className='hlinks'>
-              <a href='#'>Home</a>
-              <a href='#'>About Us</a>
-              <a href='#'>What we do</a>
-              <a href='#'>FAQs</a>
+              <a href='https://walkersdaov1.vercel.app/'>Home</a>
+              <a href='https://walkersdaov1.vercel.app/'>About Us</a>
+              <a href='https://walkersdaov1.vercel.app/'>What we do</a>
+              <a href='https://walkersdaov1.vercel.app/'>FAQs</a>
             </nav>
           </div>
           <div>

@@ -16,24 +16,24 @@ function Footer() {
                 <div class="w-1/2 lg:mr-[-10%]">
                     <h5>Links</h5>
                     <nav class="list-none">
-                    <li><a>About Us</a></li>
-                    <li><a>Our Blog</a></li>
-                    <li><a>FAQs</a></li>
-                    <li><a>What we do</a></li>
-                    <li><a>Linktree</a></li>
+                    <li><a href="https://walkersdaov1.vercel.app/">About Us</a></li>
+                    <li><a href="https://walkersdaov1.vercel.app/">Our Blog</a></li>
+                    <li><a href="https://walkersdaov1.vercel.app/">FAQs</a></li>
+                    <li><a href="https://walkersdaov1.vercel.app/">What we do</a></li>
+                    <li><a href="https://walkersdaov1.vercel.app/">Linktree</a></li>
                     </nav>
                 </div>
                 <div class="w-1/2 lg:mr-6">
                     <h5>Address</h5>
                     <nav class="list-none max-w-[90%]">
-                    <li><a>Nwaniba Road, Gate 4 <br/> Osongama Estate Uyo, Akwa Ibom</a></li>
+                    <li><a href="https://walkersdaov1.vercel.app/">Nwaniba Road, Gate 4 <br/> Osongama Estate Uyo, Akwa Ibom</a></li>
                     </nav>
                 </div>
                 <div class="w-1/2 pt-5 lg:pt-0">
                     <h5>Contact Us</h5>
                     <nav class="list-none">
-                    <li><a>+234 902 528 4756</a></li>
-                    <li><a>info@walkersdao.com</a></li>
+                    <li><a href="https://walkersdaov1.vercel.app/">+234 902 528 4756</a></li>
+                    <li><a href="https://walkersdaov1.vercel.app/">info@walkersdao.com</a></li>
                     </nav>
                 </div>
             </div>
@@ -44,7 +44,7 @@ function Footer() {
                <h6>© Copyright 2024 , Walkers DAO</h6> 
             </div>
             <div className='py-2 text-center flex justify-center'>
-                <img src={footer} />
+                <img alt="logo" src={footer} />
             </div>
         </div>
     </div>
