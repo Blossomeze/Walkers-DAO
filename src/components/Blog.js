@@ -5,8 +5,12 @@ import img4 from '../assets/dao.png'
 
 function Blog() {
   return (
-    <div className='px-[5%]'>
-        <div className='flex justify-between items-center py-8 px-[2%]'>
+    <div className='px-[4%] py-[2%]'>
+        <div className='flex flex-col items-center'>
+          <h1 className='text-2xl lg:text-4xl'>Read Our Blog</h1>
+          <h4 className='text-sm lg:text-lg lg:py-2 px-5 text-center lg:px-[27%] lg:pb-5'>Read articles from our brilliant writers</h4>
+        </div>
+        <div className='flex justify-between items-center py-8 px-[1%]'>
             <h2>Walkers DAO on Medium</h2>
             <h4>
                 <a className='text-[#000] flex items-center font-medium' target='blank' href="https://geeakpan.medium.com/" alt="youtube channel">

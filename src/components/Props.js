@@ -2,7 +2,7 @@ import React from 'react';
 
 function Props({ image, title, sublet, link }) {
   return (
-    <div className='w-[45vw] lg:w-[23vw] h-[280px] relative flex flex-col px-5 justify-between'>
+    <div className='w-[45vw] lg:w-[25vw] h-[300px] relative flex flex-col px-3 justify-between'>
       <div>
         <img src={image} alt="event images" />
         <h2 className='text-lg text-[#000] pt-3'>{title}</h2>
