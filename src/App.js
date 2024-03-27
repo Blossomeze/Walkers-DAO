@@ -5,6 +5,7 @@ import About from './About';
 import Footer from './Footer'
 import Header from './Header';
 import Whatwedo from './Whatwedo';
+import FAQ from './FAQ';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/what_we_do' element={<Whatwedo />} />
+          <Route path='/faq' element={<FAQ />} />
         </Routes>
         <Footer />
       </BrowserRouter>     

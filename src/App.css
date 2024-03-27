@@ -79,17 +79,41 @@ h5{
 
 
 
-.new-open-sidebar {
+
+.new-sidebar-container {
   position: fixed;
-  top: 4rem;
-  width: 100%;
-  height: calc(60vh - 4rem);
-  background-color: green;
-  transition: height 1s ease-out; /* Add transition effect */
-  transform: translateY(-100%); /* Initially off-screen */
-  z-index: 9999; /* Ensure sidebar is on top */
+  top: 0;
+  right: -250px; /* Start off-screen */
+  width: 250px;
+  height: 100%;
+  background-color: #F9F9F9;
+  transition: right 2s ease-in-out, transform 2s ease-in-out; /* Apply transition to right and transform properties */
+  transform: scale(0.9); /* Initial scale */
+  z-index: 10000;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
 }
 
-.new-show-sidebar {
-  transform: translateY(0); /* Slide in the sidebar */
+.new-sidebar-container.open {
+  right: 0; /* Slide in from right */
+  transform: scale(1); /* Scale to normal size */
+}
+
+.new-sidebar-container.closed {
+  right: -250px; /* Slide out to right */
+  transform: scale(0.9); /* Scale down a bit */
+}
+.sidebar-text{
+  color: #060809;
+  display: flex;
+  justify-content: space-between;
+  padding: 3% 0;
+}
+.sidebar-text:hover, .new-dropdown-menu a:hover{
+  color: #FC7800;
+  font-weight: 600;
+}
+.new-dropdown-menu{
+  display: flex;
+  flex-direction: column;
 }

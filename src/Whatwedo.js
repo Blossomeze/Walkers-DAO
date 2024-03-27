@@ -33,7 +33,7 @@ function Whatwedo() {
   <div className='p-[5%] lg:flex lg:flex-row bg-gray lg:py-[3%] items-center justify-between'>
     <div className='max-w-full lg:max-w-[55%]'>
       <h3 className='text-xl lg:text-3xl text-center lg:text-left'>Airdrop And Testnets Tutorials:</h3>
-      <h4 className='lg:text-left pt-3 text-sm lg:text-2xl'>At Walkers' DAO, we cultivate an active community, offering accurate information, threads, and links to airdrops and test nets. Our tutorials empower members with step-by-step guidelines for participation. Together, we shape the future of blockchain and DeFi while members reap the rewards.</h4>
+      <h4 className='lg:text-left pt-3 text-xs lg:text-2xl'>At Walkers' DAO, we cultivate an active community, offering accurate information, threads, and links to airdrops and test nets. Our tutorials empower members with step-by-step guidelines for participation. Together, we shape the future of blockchain and DeFi while members reap the rewards.</h4>
     </div>
     <div className='mt-4 lg:mt-0 flex justify-center'>
       <img className='max-w-[70%] lg:max-w-auto' src={airdrop} alt='illustration' />
@@ -45,15 +45,15 @@ function Whatwedo() {
     </div>
     <div className='max-w-full lg:max-w-[58%]'>
       <h3 className='text-xl lg:text-3xl text-center lg:text-left'>Discord Tutorial</h3>
-      <h4 className='lg:text-left pt-3 text-sm lg:text-2xl'>On our Discord server, our vibrant community drives organizational success. Our team tirelessly facilitates discussions, organizes events, and encourages collaboration. Discord tutorials cover:</h4>
-      <h4 className='lg:text-left pt-3 text-sm lg:text-2xl'>
+      <h4 className='lg:text-left pt-3 text-xs lg:text-2xl'>On our Discord server, our vibrant community drives organizational success. Our team tirelessly facilitates discussions, organizes events, and encourages collaboration. Discord tutorials cover:</h4>
+      <h4 className='lg:text-left pt-3 text-xs lg:text-2xl'>
         <ul className='list-disc pl-8 text-left'>
           <li>Community engagement strategies</li>
           <li>Event organization and AMA sessions</li>
           <li>Creation of engagement channels</li>
         </ul>
       </h4>
-      <h4 className='lg:text-left pt-3 text-sm lg:text-2xl'>We also provide guidance on Web3 jobs, community moderation, collaboration management, content writing, and ambassadorial roles, ensuring members are equipped to participate in DeFi activities.</h4>
+      <h4 className='lg:text-left pt-3 text-xs lg:text-2xl'>We also provide guidance on Web3 jobs, community moderation, collaboration management, content writing, and ambassadorial roles, ensuring members are equipped to participate in DeFi activities.</h4>
     </div>
   </div>
   <div className='p-[5%] lg:flex lg:flex-row bg-[#070707] lg:py-[3%] lg:px-[5%] items-center justify-between'>

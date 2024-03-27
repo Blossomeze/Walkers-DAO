@@ -17,7 +17,7 @@ function Footer() {
                     <nav class="list-none">
                     <li><Link to="/about">About Us</Link></li>
                     <li><a href="https://medium.com/@walkersdao" target='_blank' rel="noreferrer">Our Blog</a></li>
-                    <li><a href="https://walkersdaov1.vercel.app/">FAQs</a></li>
+                    <li><Link to="/faq">FAQs</Link></li>
                     <li><Link to="/what_we_do">What we do</Link></li>
                     <li><a href="https://linktr.ee/walkersdao" target='_blank' rel="noreferrer">Linktree</a></li>
                     </nav>
@@ -25,11 +25,11 @@ function Footer() {
                 <div class="w-1/2">
                     <h5 className='text-primary font-semibold'>Address</h5>
                     <nav class="list-none max-w-[90%]">
-                    <li><a href="https://walkersdaov1.vercel.app/">Remote</a></li>
+                    <li>Remote</li>
                     </nav>
                     <h5 className='text-primary pt-5 font-semibold'>Careers</h5>
                     <nav class="list-none max-w-[90%]">
-                    <li><a href="https://walkersdaov1.vercel.app/">Coming Soon</a></li>
+                    <li>Coming Soon</li>
                     </nav>
                 </div>
                 <div class="w-1/2 pt-5 lg:pt-0">

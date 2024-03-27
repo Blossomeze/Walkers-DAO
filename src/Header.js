@@ -72,14 +72,7 @@ function Header() {
         </div>
       </div>
       {isMobileView && isSidebarOpen &&
-        <div className={`new-open-sidebar ${isSidebarOpen ? 'new-show-sidebar' : ''}`}>
-          <div className="sidebar-content">
-            <NewSidebar onClose={() => setIsSidebarOpen(false)} />
-            <div className="close-sidebar-icon" onClick={handleCloseSidebar}>
-              <CloseIcon />
-            </div>
-          </div>
-        </div>
+        <NewSidebar isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />
       }
     </div>
   );
