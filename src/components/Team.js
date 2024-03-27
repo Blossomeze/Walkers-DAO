@@ -9,6 +9,7 @@ import larney from '../assets/larney.jpg'
 import diamond from '../assets/diamond.jpg'
 import favour from '../assets/favour.png'
 import idol from '../assets/idol.jpg'
+import nsisong from '../assets/nsisong.jpg'
 import  tiene from '../assets/tiene.jpg'
 import hemy from '../assets/hemmyyy.jpg'
 import whizibhi from '../assets/whizibhi.jpg'
@@ -45,7 +46,7 @@ function Team() {
             <Person image={diamond} name="DIAMOND" role="Advisor" />
             <Person image={ned} name="CHIEF NED" role="Chief Marketing Officer" />
             <Person image={idol} name="BLAQMIKE" role="Head of Creatives" />
-            <Person image={jimmy} name="NSISONG UMOH" role="Head of Content & Writer" />
+            <Person image={nsisong} name="NSISONG UMOH" role="Head of Content & Writer" />
             <Person image={favour} name="FAVOUR FRIDAY" role="Lead Graphics Designer" />
             <Person image={tiene} name="Tiene-Abasi Ikoh" role="Lead UI/UX Designer" />
             <Person image={hemy} name="HEMMIE" role="Social Media & Collaboration Manager" />

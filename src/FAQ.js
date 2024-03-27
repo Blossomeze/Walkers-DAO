@@ -66,13 +66,13 @@ function FAQ() {
         answer="To contact the team, send an email to walkersdao1@mail.com. Ensure you state clearly the subject of the email as that will determine the speed of our response."
       />
     </div>
-      <div className='bg-gray m-5 p-5 flex flex-col lg:flex-row justify-center lg:justify-between items-center'>
+      <div className='bg-gray m-5 p-5 px-[5%] flex flex-col lg:flex-row justify-center lg:justify-between items-center w-[94%] rounded-2xl'>
             <div>
-                <h3 className='text-center'>Still Have Questions?</h3>
+                <h3 className='text-center lg:text-left'>Still Have Questions?</h3>
                 <h4 className='text-sm'>Can’t find the answer you’re looking for? Please chat to our friendly team</h4>
             </div>
             <div>
-                <button className='bg-black rounded-md text-white px-3 py-2 mt-5 flex items-center'>Get In Touch <ChevronRightIcon /></button>
+                <button className='bg-black rounded-md text-white px-3 py-2 mt-5 lg:mt-0 flex items-center'>Get In Touch <ChevronRightIcon /></button>
             </div>
       </div>
     </div>

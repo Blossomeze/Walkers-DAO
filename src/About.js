@@ -46,7 +46,7 @@ function Statements() {
             <div className='flex justify-evenly items-center'>
                 <div className="py-8 lg:py-0">
                   <h3 className='text-xl lg:text-3xl'>Our Mission</h3>
-                  <h4 className='text-sm lg:text-lg text-left lg:max-w-[90%] pt-1 lg:pt-3'>Simplifying the complexities in web3 technologies enables anyone to thrive in the ecosystem, through education, innovations, mentorship and community management. <br />We're committed to fostering an inclusive environment where diverse voices are heard, and everyone has the opportunity to contribute and succeed. Together, we're building more than just a platform; we're cultivating a movement for positive change in the digital landscape. 🌐</h4>
+                  <h4 className='text-sm lg:text-lg text-left lg:max-w-[90%] pt-1 lg:pt-3'>Enabling the complexities in web3 technologies enables anyone to thrive in the ecosystem, through education, innovations, mentorship and community management. <br />We're committed to fostering an inclusive environment where diverse voices are heard, and everyone has the opportunity to contribute and succeed. Together, we're building more than just a platform; we're cultivating a movement for positive change in the digital landscape. 🌐</h4>
                 </div>
                 <div className='hidden lg:flex w-[100%]'>
                   <img src={frame} alt="illustration" />
