@@ -33,7 +33,7 @@ function Whatwedo() {
   <div className='p-[5%] lg:flex lg:flex-row bg-gray lg:py-[3%] items-center justify-between'>
     <div className='max-w-full lg:max-w-[55%]'>
       <h3 className='text-xl lg:text-3xl text-center lg:text-left'>Airdrop And Testnets Tutorials:</h3>
-      <h4 className='lg:text-left pt-3 text-xs lg:text-2xl'>At Walkers' DAO, we cultivate an active community, offering accurate information, threads, and links to airdrops and test nets. Our tutorials empower members with step-by-step guidelines for participation. Together, we shape the future of blockchain and DeFi while members reap the rewards.</h4>
+      <h4 className='lg:text-left pt-3 text-xs lg:text-2xl'>At Walkers DAO, we cultivate an active community, offering accurate information, threads, and links to airdrops and testnets. Our tutorials empower members with step-by-step guidelines for participation. Together, we shape the future of blockchain and DeFi while members reap the rewards.</h4>
     </div>
     <div className='mt-4 lg:mt-0 flex justify-center'>
       <img className='max-w-[70%] lg:max-w-auto' src={airdrop} alt='illustration' />
@@ -79,21 +79,21 @@ function Whatwedo() {
         </div>
         <div className='max-w-full lg:max-w-[58%]'>
           <h3 className='text-xl lg:text-3xl text-center lg:text-left'>DEGEN</h3>
-          <h4 className='lg:text-left pt-3 text-sm lg:text-2xl'>Degen stands for degeneration. It means taking high risk in the crypto space. It doesn't involve much fundamental or technical analysis. At Walker’s DAO, our aim is to guide our community members in taking high risk play with low capital instead of high capital like the 0-2 Sol, 0-10 Sol play and also the $10- $100 . We teach them to use different degen/trading bots.</h4>
+          <h4 className='lg:text-left pt-3 text-sm lg:text-2xl'>Degen stands for degeneration. It means taking high risk in the crypto space. It doesn't involve much fundamental or technical analysis. At Walkers DAO, our aim is to guide our community members in taking high risk play with low capital instead of high capital just like our 0-10 Sol challenge which we have completed and our 0-2 Sol play. We teach them how to use different degen/trading bots.</h4>
         </div>
       </div>
       <div className='p-[5%] lg:flex lg:flex-row bg-gray lg:py-[3%] lg:px-[5%] items-center justify-between'>
         <div className='max-w-full lg:max-w-[58%]'>
           <h3 className='text-xl lg:text-3xl text-center lg:text-left'>Research</h3>
-          <h4 className='lg:text-left pt-3 text-sm lg:text-2xl'>Research is more than just a means to an end. It's our mindset here at Walkers’. We're communityitted to curiosity, exploration, and intellectual vigor. We approach our research through;</h4>
+          <h4 className='lg:text-left pt-3 text-sm lg:text-2xl'>Research is more than just a means to an end. It's our mindset here at Walkers. We're are curious minds that are keen on exploration, and intellectual vigor. We approach our research through;</h4>
           <h4 className='lg:text-left pt-3 text-sm lg:text-2xl'>
             <ul className='list-disc pl-8 text-left'>
-              <li>Thorough analysisis</li>
+              <li>Thorough analysis</li>
               <li>Openness and transparency</li>
-              <li>Long-term Vision and impact.</li>
+              <li>Long-term vision and impact.</li>
             </ul>
           </h4>
-          <h4 className='lg:text-left pt-3 text-sm lg:text-2xl'>We are passionate about exploring the frontiers of DeFi and uncovering new ideas andoesn't insights to shape the DeFi future</h4>
+          <h4 className='lg:text-left pt-3 text-sm lg:text-2xl'>We are passionate about exploring the frontiers of web3 and uncovering new ideas with insights to shape the future.</h4>
         </div>
         <div className='mt-4 lg:mt-0 flex justify-center'>
           <img className='max-w-[70%] lg:max-w-auto' src={research} alt='illustration' />

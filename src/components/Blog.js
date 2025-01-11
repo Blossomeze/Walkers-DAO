@@ -14,7 +14,7 @@ function Blog() {
       <div className='flex justify-between items-center pb-2 pt-4 lg:py-8 px-[1%] overflow-x-auto'>
         <h2 className="text-lg lg:text-4xl">Walkers DAO on Medium</h2>
         <h4>
-          <a className='text-[#000] flex items-center font-medium text-sm' target='_blank' href="https://walkersdao.medium.com/" alt="medium channel">
+          <a className='text-[#000] flex items-center font-medium text-sm' target='_blank' rel="noreferrer" href="https://walkersdao.medium.com/" alt="medium channel">
             Read More
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none">
               <path

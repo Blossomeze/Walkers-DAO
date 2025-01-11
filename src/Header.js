@@ -65,9 +65,9 @@ function Header() {
           </ul>
         </div>
         <div className='hidden md:flex'>
-          <button className="bg-black text-white flex p-3 pr-1 rounded-md items-center" onClick={handleIconClick}>
+          <button disabled className="bg-black text-white flex p-3 pr-1 rounded-md items-center" onClick={handleIconClick}>
             <span>Launch DAO</span>
-            <img src="https://icongr.am/material/foot-print.svg?size=29&color=ffffff" alt="Footprint Icon" style={{ transform: 'scaleX(-1)', marginTop: '-4%', marginLeft: '-2%' }} />
+            <img className='animate-pulse' src="https://icongr.am/material/foot-print.svg?size=29&color=ffffff" alt="Footprint Icon" style={{ transform: 'scaleX(-1)', marginTop: '-4%', marginLeft: '-2%' }} />
           </button>
         </div>
       </div>

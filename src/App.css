@@ -117,3 +117,6 @@ h5{
   display: flex;
   flex-direction: column;
 }
+.footer-links li:hover, .footer-links li a:hover{
+  color: #FC7800;
+}
